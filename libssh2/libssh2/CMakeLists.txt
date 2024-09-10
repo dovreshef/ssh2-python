@@ -49,6 +49,7 @@ else()
   set (CMAKE_C_STANDARD 90)
 endif()
 
+set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wno-incompatible-function-pointer-types -Wno-deprecated-declarations")
 option(BUILD_SHARED_LIBS "Build Shared Libraries" OFF)
 
 # Parse version
